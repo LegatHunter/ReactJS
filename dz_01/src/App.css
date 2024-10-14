@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  text-align: center;
+}
+
+.message {
+  background-color: #cfc8c8;
+  height: 100vh
+}
+
+.message h1 {
+  margin: auto;
+  text-align: center;
+  padding-top: 200px;
+  font-size: 50px;
+  color: #4784e0;
+}
