@@ -16,6 +16,8 @@ import TextField from "@mui/material/TextField";
 import { useState } from "react";
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
 
 
 function TodoList() {
@@ -40,9 +42,9 @@ function TodoList() {
       <Button variant="contained" onClick={addTask} size="large">
         Добавить
       </Button>
-      <ul style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+      <List style={{ display: "flex", flexDirection: "column", gap: 10 }}>
         {tasks.map((task, index) => (
-          <li
+          <ListItem
             style={{
               display: "flex",
               alignItems: "center",
@@ -59,9 +61,9 @@ function TodoList() {
               }}>
               <DeleteIcon fontSize="inherit" />
             </IconButton>
-          </li>
+          </ListItem>
         ))}
-      </ul>
+      </List>
     </div>
   );
 }
